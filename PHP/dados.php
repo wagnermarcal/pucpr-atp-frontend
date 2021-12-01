@@ -7,8 +7,8 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 $phone = $_POST["telefone"];
 
-$sql = "INSERT INTO usuario (login, senha, name, telefone)
-VALUES ('$username', '$password', '$name', '$phone')";
+$sql = "INSERT INTO usuario (senha, name, telefone, login)
+VALUES ('$password', '$name', '$phone','$username')";
 
 if (mysqli_query($conn, $sql)) {
     header("location: ../Auth/login.php");

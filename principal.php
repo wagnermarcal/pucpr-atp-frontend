@@ -12,6 +12,22 @@
 <body>
   <header>
     <nav>
+      <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+      <script type="text/javascript">
+        MRP.insert({
+          'url': 'https://icy.unitedradio.it/VirginRock80.mp3',
+          'codec': 'mp3',
+          'volume': 100,
+          'autoplay': true,
+          'jsevents': true,
+          'buffering': 0,
+          'title': 'Waguin',
+          'wmode': 'transparent',
+          'skin': 'repvku-100',
+          'width': 0,
+          'height': 0
+        });
+      </script>
       <img src="Images/Logo Wagner.png" alt="">
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -20,15 +36,19 @@
       </div>
       <ul class="nav-list">
         <li><a href="principal.php">Início</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Empréstimos</a></li>
+        <li><a href="itens.php">Itens</a></li>
+        <li><a href="emprestimo.php">Empréstimos</a></li>
         <li><a href="cadastro-itens.php">Cadastro</a></li>
-        <li><a href="Auth/logout.php">Logout</li>
+        <li><a href="Auth/logout.php">Logout</a></li>
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <div id="particles-js"></div>
+  </main>
   <script src="mobile-navbar.js"></script>
+
+
 </body>
 
 </html>

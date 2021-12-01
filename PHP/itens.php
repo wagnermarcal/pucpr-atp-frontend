@@ -9,7 +9,7 @@ $sql = "INSERT INTO itens (nome, tipo)
 VALUES ('$name', '$type')";
 
 if (mysqli_query($conn, $sql)) {
-    header("location: ../principal.php");
+    header("location: ../cadastro-itens.php");
 } else {
     echo "Erro!!!" . mysqli_connect_error($conn);
 }

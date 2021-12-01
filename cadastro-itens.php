@@ -12,6 +12,23 @@
 <body>
   <header>
     <nav>
+      <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+      <script type="text/javascript">
+        MRP.insert({
+          'url': 'https://cast.magicstreams.gr:2200/ssl/psyndora?mp=%2Fstream',
+          'lang': 'pt',
+          'codec': 'mp3',
+          'volume': 100,
+          'autoplay': true,
+          'jsevents': true,
+          'buffering': 0,
+          'title': 'Waguinho',
+          'wmode': 'transparent',
+          'skin': 'repvku-100',
+          'width': 0,
+          'height': 0
+        });
+      </script>
       <img src="Images/Logo Wagner.png" alt="">
       <div class="mobile-menu">
         <div class="line1"></div>
@@ -20,8 +37,8 @@
       </div>
       <ul class="nav-list">
         <li><a href="principal.php">Início</a></li>
-        <li><a>Sobre</a></li>
-        <li><a>Empréstimos</a></li>
+        <li><a href="itens.php">Itens</a></li>
+        <li><a href="emprestimo.php">Empréstimos</a></li>
         <li><a href="cadastro-itens.php">Cadastro</a></li>
         <li><a href="Auth/logout.php">Logout</a></li>
       </ul>
