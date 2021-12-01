@@ -11,7 +11,7 @@ $sql = "INSERT INTO usuario (login, senha, name, telefone)
 VALUES ('$username', '$password', '$name', '$phone')";
 
 if (mysqli_query($conn, $sql)) {
-    header("location: ../Auth/login.html");
+    header("location: ../Auth/login.php");
 } else {
     echo "Erro!!!" . mysqli_connect_error($conn);
 }

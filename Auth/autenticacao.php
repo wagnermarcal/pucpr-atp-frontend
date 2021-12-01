@@ -21,9 +21,9 @@ ob_start();
     if ($linhas > 0) {
         session_start();
         $_SESSION["login"] = $username;
-        header("location: ../principal.html");
+        header("location: ../principal.php");
     } else {
-        header("location: wronglogin.html");
+        header("location: wronglogin.php");
     }
     ?>
 </body>
